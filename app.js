@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
-  res.send(req.headers)
+  res.send(`Request Headers: ${req.headers}<br><br>Response Headers: ${res.headers}`)
 })
 
 app.listen(port, () => {
