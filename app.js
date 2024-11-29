@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 app.post('/hook_test', (req, res) => {
   const rawBody = req.body;
   console.log(rawBody.toString('utf-8'))
-}
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
